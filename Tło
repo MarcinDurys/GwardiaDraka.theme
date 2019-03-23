@@ -1,30 +1,33 @@
-/*Theme*/
+/*//META{"name":"GwardiaDraka Theme","description":
+"Tlo stworzone dla widzow","author":"Marcin","version":"1","website":"https://discord.me/GwardiaDraka", 
+"source":"https://github.com/MarcinDurys/GwardiaDraka.theme"}*/
+/*Theme https://i.imgur.com/9s5zWxn.jpg*/
 @import url('https://waterin.github.io/Coloured-Discord-Theme/Source/Coloured-Discord-Theme-RGB.theme.css');
 
 
 
 :root {
  	/*Selektor Motywu*/
-    --Red: 220;   /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
-    --Green: 20; /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
-    --Blue: 120;  /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
+    --Red: 32;   /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
+    --Green: 178; /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
+    --Blue: 170;  /*Wartosci sa od 0 do 255, jak w kodzie RGB*/
 	/*Zdjecie w tle*/
     --main-bg: url(https://i.imgur.com/9s5zWxn.jpg) !important;  
 	/*Jasnosc tla*/
     --bg-brightness: 100; /*Dostosuj jasnosc tla (0-100)*/
 	/*Ustawienia czcionki*/
-    --theme-font: 'Comic Sans';
-    --font-thickness: 900;
+    --theme-font: 'Roboto, Whitney, Helvetica Neue, Helvetica, Arial,Lucida Grande,sans-serif' !important;
+    --font-thickness: 340;
 	/*Rozmiar awatara na czacie*/
     --chatavatar-size: 40px; /*Default: 40px*/
 	/*Animacja listy czlonkow*/
     --disable-enable-memberlist-effect: 50px /*Ustaw 240px aby wylaczyc*/;
     --disable-blockedmsgs:; /*Pozostaw puste, aby wyswietlic wiadomosci o zablokowanych osobach, Ustaw 'none', aby ukryc*/
 	/*Tla wiadomosci koloru rol*/
-    --Message-RoleColor:currentColor; /*Ustaw 'none' aby wylaczyc | Ustaw currentColor aby wlaczyc*/
+    --Message-RoleColor:none; /*Ustaw 'none' aby wylaczyc | Ustaw currentColor aby wlaczyc*/
 	/*Animacje tagow*/
-    --Tag-Anim1:;/*Niektore tagi maja animacje | Puste do domyslnego, 0s do wylaczenia, Xs do wlaczenia z czasem ustawionym przez uzytkownika*/
-    --Tag-Anim2:;/*Niektore tagi maja animacje | Puste do domyslnego, 0s do wylaczenia, Xs do wlaczenia z czasem ustawionym przez uzytkownika*/
+    --Tag-Anim1:3;/*Niektore tagi maja animacje | Puste do domyslnego, 0s do wylaczenia, Xs do wlaczenia z czasem ustawionym przez uzytkownika*/
+    --Tag-Anim2:3;/*Niektore tagi maja animacje | Puste do domyslnego, 0s do wylaczenia, Xs do wlaczenia z czasem ustawionym przez uzytkownika*/
 
 	--chatavatar-size-on-hover: 70px; /*Default: 70px*/
 	
@@ -39,7 +42,7 @@
 	position: absolute;
 	font-size: 28px;
 	font-weight: bolder;
-	color: LimeGreen;
+	color: Mediumseagreen;
 	font-family: Comic;
 	display: move;
 	top: 4px;
@@ -133,16 +136,16 @@
 #app-mount .introBlurb-3gFgTQ,
 #app-mount .introHeader-4MPach,
 #app-mount .side-8zPYf6 .header-2RyJ0Y{
-	color: MediumSeaGreen
+	color: Coral
 }
 .da-markup .repoUtils,
 .nameMutedText-3Vj4bM, .nameMutedVoice-3oxyQZ{
-	color: OliveDrab; !important;
+	color: Gray; !important;
 	filter:invert(1);
 }
 .button-1w5pas g path:nth-child(2),
 .button-1w5pas g path:nth-child(3) {
-	stroke: var(--Font-Color)!important;
+	stroke: green !important;
 	text-shadow: 0 0 3px green
 }
 #app-mount .userSettingsAccount-2eMFVR .viewBody-2Qz-jg,
@@ -176,7 +179,7 @@
 .icon-1R19_H[name="NotificationBell"] g path,
 .icon-1R19_H[name="NotificationBellOff"] g path,
 .bd-cm .bd-cmItem, .da-contextMenu .bd-cmItem,
-.newMessagesBar-mujexs button,
+.newMessagesBar-mujexs header,
 #app-mount .item-1Yvehc,
 .addButtonIcon-3u-3Hu polygon,
 .guildsAddInner-1KMFy-,
@@ -192,7 +195,7 @@
 #bd-settings-sidebar .ui-tab-bar-header,
 .side-8zPYf6 .header-2RyJ0Y,
 [style*="font-size: 12px; font-weight: 600; color: rgb(114, 118, 125); padding: 2px 10px;"]{
-    color: cyan;
+    color: gold;
 }
 /*Czlonkowie koloru rol*/
 .memberInner-2CPc3V .nameTag-3p0yK- {
@@ -226,7 +229,7 @@
     position:relative;
     opacity:0;
     animation: slide-in calc(1.2s / var(--slide-speed, 1)) ease;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 .containerDefault-1ZnADq:nth-child(2) {
     animation-delay:0s;
@@ -300,7 +303,7 @@
     100%{box-shadow: 1px 1px 1px rgba(0,0,0,0);}
 }
 .theme-dark .unread-1Dp-OI {
-	background-color: rgba(calc(220 * var(--Darker-than-Red)),calc(220 * var(--Neutralized-Green)),calc(220 * var(--Lighter-than-Blue)),1) !important;
+	background-color: magenta !important;
 	animation: pulse7 2s linear infinite !important;
 }
 @keyframes pulse7{
@@ -459,7 +462,9 @@ transform: translate3d(0, 0, 0);
   display: block;
   padding-top: 5px;
   margin-bottom: -10px;
-  content: "GwardiaDraka v1 by Marcin"; }
+  content: "GwardiaDraka v1 by Marcin"; 
+  color: gold;
+}
 /*Change Log*/
 #bd-settingspane-container .bda-slist::before,
 .app-2rEoOp button #bd-settingspane-container .bda-slist::before{
@@ -469,7 +474,7 @@ transform: translate3d(0, 0, 0);
   line-height:24px;
   font-size:18px;
   position: relative;
-  background: linear-gradient(180deg,#ff0000, #00ff00, #0000ff);
+  background: gold;
   padding: 10px 15px;
   white-space: pre;
   margin-bottom: 15px;
@@ -573,7 +578,7 @@ transform: translate3d(0, 0, 0);
         80%{opacity:.5;-webkit-transform:scale(1);transform:scale(1)}
         95%{opacity:.5;-webkit-transform:scale(1);transform:scale(1)}
         99%{content:var(--load3);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
-        100%{content:"Theme by Waterin";-webkit-transform:scale(1);transform:scale(1);opacity:0}
+        100%{content:"Tlo by Marcin";-webkit-transform:scale(1);transform:scale(1);opacity:0}
 }
 /****************************************************************
 ****************************************************************
@@ -613,7 +618,7 @@ transform: translate3d(0, 0, 0);
 /*Member Count by Arashiryuu*/
 #app-mount #MemberCount {
 	color: rgba(150,150,150,1);
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: .10em;
 	font-weight: 900;
@@ -830,9 +835,7 @@ transform: translate3d(0, 0, 0);
 	background:rgba(calc(var(--Red) + 10),calc(var(--Green) + 10),calc(var(--Blue) + 10),1);
 	color:#fff
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Friends*/
 .search-bar .search-bar-inner { /*Search Bar Color*/
 	background-color: rgba(var(--Red),var(--Green),var(--Blue),0.3) !important;
@@ -936,9 +939,7 @@ transform: translate3d(0, 0, 0);
 	background-color: rgba(var(--Red),var(--Green),var(--Blue),0.4) !important;
 	color: rgba(255,255,255,1) !important;
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Server's List*/
 *[style*="background-color: rgb(114, 137, 218)"] {
 	background-color: rgba(var(--Red),var(--Green),var(--Blue),1)!important;
@@ -967,14 +968,14 @@ transform: translate3d(0, 0, 0);
 ****************************************************************/
 /*Channel's List*/
 #app-mount .content-20Aix8:hover { /*Channel Highlight Hovered*/
-	background-color: rgba(var(--Red),var(--Green),var(--Blue),0.2);
+	background-color: white;
 }
 #app-mount .contentSelectedText-3wUhMi { /*Selected Channel Highlight*/
-	background-color: rgba(calc(var(--Red) + 20),calc(var(--Green) + 20),calc(var(--Blue) + 20),0.2);
+	background-color: lightgray;
 	border-left: 4px solid rgba(calc(var(--Red) + 70),calc(var(--Green) + 70),calc(var(--Blue) + 70),0.5);
 }
 #app-mount .unread-1Dp-OI { /*Unread Message dot Color*/
-	background-color: rgba(calc(var(--Red) + 60),calc(var(--Green) + 60),calc(var(--Blue) + 60),1);
+	background-color: magenta;
 }
 .contentHoveredText-2D9B-x { /*Trash Layer (KeepTransparent)*/
 	background-color: rgba(var(--Red),var(--Green),var(--Blue),0.2);
@@ -993,14 +994,14 @@ transform: translate3d(0, 0, 0);
 }
 .iconHovered-2L3-fB,.iconHoveredCollapsed-3caIIZ,.iconMuted-1HVBGH,
 .iconUnread-2eGkvX { /*Category Font Color Hovered*/
-	color: rgba(calc(var(--Red) + 30),calc(var(--Green) + 30),calc(var(--Blue) + 30),1) !important;
+	color: magenta !important;
 }
 .nameCollapsed-34uFWo,.nameDefault-2DI02H,.nameHovered-1gxhWH,.nameHoveredCollapsed-2orEWB,.nameMuted-1MCOt4,
 .nameUnread-njOjIS { /*Channel States*/
 	font-weight: 900 !important
 }
 #app-mount .unread-1xRYoj { /*Channel Unread*/
-	background-color: rgba(var(--Red),var(--Green),var(--Blue),1);
+	background-color: magenta);
 }
 #app-mount .unread-1Dp-OI{ /*Channel Unread*/
 	height: 70% !important;
@@ -1009,6 +1010,7 @@ transform: translate3d(0, 0, 0);
 .channelNotices-41mJbj .channelNotice-1-XFjC.quickswitcher-35bYg4,
 .channelNotices-41mJbj .channelNotice-1-XFjC.invite-OjTXrW {
 	background: transparent;
+	color: magenta;
 }
 .avatarSpeaking-1wJCNq, .avatarDefault-35WC3R, .avatarContainer-72bSfM {
     border-color: transparent !important;
@@ -1035,12 +1037,10 @@ transform: translate3d(0, 0, 0);
     opacity: 0.5;
     z-index: -1;
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Message Chat*/
 .newMessagesBar-mujexs { /*Unread Message counter Bar*/
-	background-color: rgba(var(--Red),var(--Green),var(--Blue),1) !important;
+	background-color: magenta !important;
 }
 .messagesWrapper-3lZDfY .image-33JSyf{ /*Profile Image Animation Not Hovered*/
 	width           : var(--chatavatar-size);
@@ -1048,7 +1048,7 @@ transform: translate3d(0, 0, 0);
 	border          : 5px solid rgba(var(--Red),var(--Green),var(--Blue),0.2);
 	border-radius   : 1!important;
 	background-size : cover!important;
-	transition      : all .4s ease !important;
+	transition      : all .1s ease !important;
 	opacity         : 1!important;
 	margin          : 0!important;
 }
@@ -1064,7 +1064,7 @@ transform: translate3d(0, 0, 0);
     transition: all .25s ease-in-out;
 }
 #app-mount .inner-zqa7da { /*Texting Box*/
-	background-color: rgba(calc(var(--Red) + 20),calc(var(--Green) + 20),calc(var(--Blue) + 20),0.6) !important;
+	background-color: none !important;
 }
 .containerCozy-jafyvG { /*Message Separators*/
 	border-bottom: 2px solid rgba(var(--Red),var(--Green),var(--Blue),0.4) !important;
@@ -1102,10 +1102,10 @@ transform: translate3d(0, 0, 0);
 #app-mount .messageGroupBlocked-3wrQQX{
 	display:var(--disable-blockedmsgs, none);}
 #app-mount .messagesPopoutWrap-1MQ1bW {
-	background-color: rgba(var(--Red),var(--Green),var(--Blue),0.3) !important;
+	background-color: magenta !important;
 }
 #app-mount .header-ykumBX {
-	background-color: rgba(calc(var(--Red) - 20),calc(var(--Green) - 20),calc(var(--Blue) - 20),1) !important;
+	background-color: magenta !important;
 	box-shadow: 0px 0px 0 rgba(0,0,0,0) !important;
 }
 #app-mount .messageGroupWrapper-o-Zw7G {
@@ -1126,13 +1126,13 @@ transform: translate3d(0, 0, 0);
 	background-color: rgba(calc(var(--Red) + 20),calc(var(--Green) + 20),calc(var(--Blue) + 20),0.5) !important;
 }
 #app-mount .topic-2QX7LI a {
-	color: rgba(var(--Red),var(--Green),var(--Blue),1) !important;
+	color: Blue !important;
 }
 #app-mount .topic-2QX7LI:hover a {
-	color: rgba(calc(var(--Red) + 30),calc(var(--Green) + 30),calc(var(--Blue) + 30),1) !important;
+	color: blue !important;
 }
 #app-mount .message-group a {
-	color: rgba(255,255,255,1) !important;
+	color: magenta !important;
 }
 #app-mount .message-group:hover a {
 	color: rgba(calc(var(--Red) + 30),calc(var(--Green) + 30),calc(var(--Blue) + 30),1) !important;
@@ -1150,8 +1150,8 @@ transform: translate3d(0, 0, 0);
 	color: rgba(255,255,255,1) !important;
 }
 #app-mount .hasMore-3e72_v button,.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {
-	background: rgba(var(--Red),var(--Green),var(--Blue),0.5) !important;
-	border-color: rgba(calc(var(--Red) + 20),calc(var(--Green) + 20),calc(var(--Blue) + 20),0) !important;
+	background: magenta !important;
+	border-color: magenta !important;
 }
 #app-mount .everyonePopout-nEbJY3 {
 	background: transparent;
@@ -1189,9 +1189,7 @@ transform: translate3d(0, 0, 0);
     display: flex;
     position: relative;
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Add server Popout*/
 .create-guild-container.deprecated .form.deprecated .form-inner,
 .form-deprecated .btn+.btn,
@@ -1209,7 +1207,7 @@ transform: translate3d(0, 0, 0);
 .form-deprecated .form-actions,
 .form.deprecated .form-actions,
 .create-guild-container.deprecated .form-actions .btn-default {
-	background: rgba(30,30,30,1);
+	background: magenta;
 	border-color: transparent;
 }
 .create-guild-container.deprecated .action {
@@ -1244,16 +1242,12 @@ transform: translate3d(0, 0, 0);
 .or-3THJsp { /*Or crap*/
 	display:none;
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Change button server settings/overview*/
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {
 	background: rgba(var(--Red),var(--Green),var(--Blue),.4);
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*New DM Popout*/
 #app-mount .private-channel-recipients-invite .friend {
     background: transparent;
@@ -1305,9 +1299,7 @@ transform: translate3d(0, 0, 0);
 #app-mount .title-3qD0b- {
 	box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Members List*/
 #app-mount .memberOnline-1CIh-0 { /*Member Not Hovered*/
 	color: rgba(var(--Red),var(--Green),var(--Blue),1) !important;
@@ -1374,9 +1366,7 @@ transition: all 700ms ease;
 .dms-rcsEnV .guild-1EfMGQ a::after {
   box-shadow: 0 0 0 -2px rgba(var(--Red),var(--Green),var(--Blue),1) inset, 0 0 0 -2px rgba(var(--Red),var(--Green),var(--Blue),1), 0 0 0 23px rgba(255, 255, 255, 0), 0 2px 24px rgba(0, 0, 0, 0.1) !important;
 }*/
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Search Bar/Results*/
 #app-mount .searchResultsWrap-2DKFzt {
 	background-color: rgba(calc(var(--Red) - 30),calc(var(--Green) - 30),calc(var(--Blue) - 30),0.7) !important;
@@ -1488,9 +1478,7 @@ transition: all 700ms ease;
 .messageGroupWrapper-o-Zw7G.da-messageGroupWrapper {
     background-color: rgba(0,0,0,0);
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Settings Menu*/
 .side-8zPYf6 .header-2RyJ0Y:first-child { /*User Settings Font*/
 	color: rgba(calc(var(--Red) + 20),calc(var(--Green) + 20),calc(var(--Blue) + 20),1) !important;
@@ -1686,9 +1674,7 @@ transition: all 700ms ease;
 .bda-links .repoUtils {
 	color: #fff !important;
 }
-/****************************************************************
-****************************************************************
-****************************************************************/
+
 /*Others*/
 #app-mount .keyboardShortcutsModal-3piNz7{/*Keyboard combos*/
 	background: rgba(calc(var(--Red) - 20),calc(var(--Green) - 20),calc(var(--Blue) - 20),1);
@@ -2354,7 +2340,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 }
 .containerCozyBounded-1rKFAn .username-_4ZSMR::before {
   content: "";
-  background: var(--Message-RoleColor, currentColor);
+  background: currentColor;
   position: absolute;
   width: 200vw;
   height: 500vh;
